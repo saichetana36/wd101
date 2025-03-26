@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <header>
+        <h1>Registration Page</h1>
+    </header>
+
+    <main>
+        <!-- Registration Form -->
+        <section>
+            <h2>Fill Your Details</h2>
+            <form id="registrationForm">
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+                <div>
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+                <div>
+                    <input type="checkbox" id="acceptTerms" name="acceptTerms" required>
+                    <label for="acceptTerms">Accept Terms & Conditions</label>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <!-- User Entries Table -->
+        <section>
+            <h2>Submitted Entries</h2>
+            <table id="userTable">
+                <thead>
+                    <tr>
+                        <th>Name </th>
+                        <th>Email </th>
+                        <th>Password </th>
+                        <th>Date of Birth </th>
+                        <th>Accepted Terms </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Entries will be dynamically added here -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+<script src="index.js"></script>
+</html>
